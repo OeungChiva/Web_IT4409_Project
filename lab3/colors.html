@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercise1-Event Handling</title>
+</head>
+<body>
+    <a href="" style="color:red" onmouseover="tx1_in()" onmouseout="tx1_out()">Red</a>
+    <p id="tx1">Rolls over Red,the color of the text in the paragraph will 
+change to the color Red</p>
+    <a href="" style="color:green" onmouseover="tx2_in()" onmouseout="tx2_out()">Green</a>
+    <p id="tx2">Rolls over Green,the color of the text in the paragraph will 
+change to the color Green</p>
+    <a href="" style="color:blue" onmouseover="tx3_in()" onmouseout="tx3_out()">Blue</a>
+    <p id="tx3">Rolls over Blue,the color of the text in the paragraph will 
+change to the color Blue</p>
+</body>
+<script>
+    var text1 = document.getElementById("tx1");
+    var text2 = document.getElementById("tx2");
+    var text3 = document.getElementById("tx3");
+    function tx1_in(){
+        text1.style.color="red";
+    }
+    function tx1_out(){
+        text1.style.color="black";
+    }
+
+    function tx2_in(){
+        text2.style.color="green";
+    }
+    function tx2_out(){
+        text2.style.color="black";
+    }
+
+    function tx3_in(){
+        text3.style.color="blue";
+    }
+    function tx3_out(){
+        text3.style.color="black";
+    }
+
+</script>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>  
+<html>
+<head>
+</head>
+<body>  
+<div style="
+	  background: #C2D8E2 ;
+	  width:300px;
+    height:500px;
+    margin-left: 500px;
+    padding: 50px;
+    border:5px solid black;">
+<h2 style="text-align: center;">PHP Form</h2>
+<form action="exercise.php" method="POST" id="submit_info">  
+  Name: <input type="text" name="name">
+  <br><br>
+  Age : <input type="number" name="age">
+  <br><br>
+  Class: <input type="text" name="class">
+  <br><br>
+  University: <input type="text" name="university">
+  <br><br>
+  E-mail: <input type="text" name="email">
+  <br><br>
+  Gender:
+  <input type="radio" name="gender" value="Female">Female
+  <input type="radio" name="gender" value="Male">Male
+  <input type="radio" name="gender" value="Other">Other
+  <br><br>
+  Hobbies:<br><br>
+  <input type="checkbox" value="Cooking" name="hobby[]">Cooking<br>
+  <input type="checkbox" value="Reading" name="hobby[]">Reading<br>
+  <input type="checkbox" value="Listening to music" name="hobby[]">Listening to music<br>
+  <input type="checkbox" value="Watching movies" name="hobby[]">Watching movies<br><br>
+		
+  <input type="submit" name="submit" value="Submit">  
+  <input type="reset" value="Erase and Restart" form="submit_info">
+</form>
+
+
+
+</body>
+</div>
+</html>
